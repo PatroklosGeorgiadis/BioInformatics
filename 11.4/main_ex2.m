@@ -5,4 +5,5 @@ Transition_matrix = [0.9 0.1; 0.1 0.9];
 Emission_matrix = [0.4 0.4 0.1 0.1; 0.2 0.2 0.3 0.3];
 SequenceLetters = ['G','G','C','T'];
 Sequence = [2, 2, 4, 3];
-viterbi(States, Observations, Initial_state_matrix, Transition_matrix, Emission_matrix, Sequence)
+p = viterbi(States, Observations, Initial_state_matrix, Transition_matrix, Emission_matrix, Sequence);
+disp(p);
